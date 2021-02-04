@@ -1,0 +1,199 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body{
+  background-image: url('back21.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+
+
+}
+
+
+#container{
+width:100%;
+display: flex;
+
+flex-wrap:wrap;
+align-content: space-between;
+height: 100vh;
+}
+#arrows{
+width: 100%;
+display: flex;
+order:2;
+justify-content: space-around;
+margin-bottom: 40px;
+}
+.app{
+  line-height: 15px;
+  margin-left:30px;
+  color:gold;
+  margin-top:50px;
+  line-height: 30px;
+}
+#author{
+  margin:10px;
+  float:right;
+  color: #cfc9ae;
+  font-family: 'Sriracha', cursive;
+  font-size: 18px;
+}
+#quot{
+  font-family: 'Sriracha', cursive;
+  font-size: 25px;;
+}
+
+
+#right{
+cursor: pointer;
+
+
+}
+
+#left{
+  cursor: pointer;
+  
+  
+}
+#right1 {
+    margin: 20px;
+    width: 40px;
+    height: 4px;
+    border: none;
+    background-color: gold;
+    transform: rotate(39deg);
+
+  }
+
+  #right2 {
+    margin: 20px;
+    width: 40px;
+    height: 4px;
+    border: none;
+    background-color: gold;
+    transform: rotate(140deg);
+  }
+  #left1 {
+    margin: 20px;
+    width: 40px;
+    height: 4px;
+    border: none;
+    background-color: gold;
+    transform: rotate(-37deg);
+    
+  }
+  #left2 {
+    margin: 20px;
+    width: 40px;
+    height: 4px;
+    border: none;
+    background-color: gold;
+    transform: rotate(-143deg);
+  }
+  @keyframes moveleft1 {
+    from {
+      transform: rotate(-37deg);
+      
+      }
+     to {
+       transform: rotate(0deg);
+       
+       opacity: 0.5;
+     };
+     
+  }
+  @keyframes moveleft2 {
+    from {
+      transform: rotate(-143deg)
+      }
+     to {
+       transform: rotate(0deg);
+       visibility: hidden;
+       opacity: 0.5;
+     }
+ 
+  }
+  @keyframes moveleftold1 {
+    from {
+      transform: rotate(0deg)
+      }
+     to {
+       transform: rotate(-40deg);
+     }
+ 
+  }
+  @keyframes moveleftold2 {
+    from {
+      transform: rotate(0deg)
+      }
+     to {
+       transform: rotate(-143deg);
+     }
+ 
+  }
+  @keyframes moveright1 {
+    from {
+      transform: rotate(36deg)
+      }
+     to {
+       transform: rotate(0deg);
+       opacity: 0.5;
+     }
+ 
+  }
+  @keyframes moveright2 {
+    from {
+      transform: rotate(144deg)
+      }
+     to {
+       transform: rotate(0deg);
+       visibility: hidden;
+       opacity: 0.5;
+     }
+ 
+  }
+  @keyframes moverightold1 {
+    from {
+      transform: rotate(0deg)
+      }
+     to {
+       transform: rotate(39deg);
+     }
+ 
+  }
+  @keyframes moverightold2 {
+    from {
+      transform: rotate(0deg)
+      }
+     to {
+       transform: rotate(140deg);
+     }
+ 
+    
+  }
+
+  @media only screen and (max-width: 823px) {
+    body {
+      object-fit: fill;
+      background-position: right;
+      
+    }
+  }
+  @media only screen and (min-width: 823px) {
+    body {
+      background-size: 100% 100%;
+      
+    }
+  }
+  @media only screen and (max-width: 823px) {
+    .app {
+     margin: 2px;
+      
+    }
+  }
