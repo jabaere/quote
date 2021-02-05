@@ -193,7 +193,8 @@ cursor: pointer;
   }
   @media only screen and (max-width: 823px) {
     .app {
-     margin: 2px auto;
+     margin: 2px;
+     text-align:center;
      margin-top: 20px;
     }
   }
