@@ -1,1 +1,1 @@
-# quote
+# A collection of motivational quotes
