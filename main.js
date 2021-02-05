@@ -1,10 +1,10 @@
 var count = 0;
 
-//config page load
+//page load config 
 addEventListener('load',function(){
     document.getElementById('quot').innerHTML="The only power a person has is the ability to change himself"
     document.getElementById('author').innerHTML='saitama :)'
-    //desighn left arrow in start
+    //design left arrow in start
     document.getElementById('left').style.cursor='not-allowed'
     document.getElementById('left1').style.animation = 'moveleft1 1s forwards'; 
     document.getElementById('left2').style.animation = 'moveleft2 1s forwards'; 
@@ -31,8 +31,7 @@ var slide = setInterval(function(){
     document.getElementById('left').style.cursor='pointer'
     document.getElementById('left1').style.animation = 'moveleftold1 1s forwards'; 
     document.getElementById('left2').style.animation = 'moveleftold2 1s forwards'; 
-    //config right arrow after 2 index
- }
+    }
 }, 8000)
 //receive data from data js
 function setData(index) {
